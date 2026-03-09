@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO so it can appear on Google -->
+<title>Affordable Websites in Pretoria | Lionel Web Design</title>
+<meta name="description" content="Lionel Web Design builds affordable websites for local businesses in Pretoria. Prices from R1000. WhatsApp 0736212040.">
+<meta name="keywords" content="website designer pretoria, affordable websites south africa, web design pretoria, small business website">
+<meta name="author" content="Lionel Web Design">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0a0a0a;color:white;overflow-x:hidden}
+
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2}
+
+nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);z-index:10}
+
+.logo{display:flex;align-items:center;gap:10px;font-weight:700}
+.logo-text{color:#00ffd5;font-size:20px}
+
+nav ul{display:flex;list-style:none}
+nav ul li{margin-left:25px}
+nav ul li a{text-decoration:none;color:white}
+
+header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+header h1{font-size:58px;max-width:900px}
+header p{margin-top:10px;font-size:20px;opacity:.8}
+
+.cta{margin-top:30px;padding:16px 40px;border:none;border-radius:30px;background:#00ffd5;font-weight:600;cursor:pointer}
+
+section{padding:110px 10%}
+.section-title{text-align:center;font-size:40px;margin-bottom:50px}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+
+.card{background:rgba(255,255,255,.05);padding:35px;border-radius:16px;backdrop-filter:blur(10px);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.price{color:#00ffd5;margin-top:15px;font-size:22px}
+
+/* SALES PAGE */
+.sales{max-width:900px;margin:auto;text-align:center}
+.sales h3{margin-top:20px;font-size:26px}
+
+.order-box{background:rgba(255,255,255,.05);padding:30px;border-radius:14px;margin-top:30px}
+.order-box input,.order-box select,.order-box button{width:100%;margin-top:10px;padding:12px;border:none;border-radius:8px}
+.order-box button{background:#00ffd5;font-weight:600;cursor:pointer}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.gallery div{height:160px;background:linear-gradient(135deg,#00ffd5,#0066ff);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:600}
+
+.phone{margin:6px 0}
+.whatsapp{display:inline-block;margin-top:20px;background:#25D366;padding:14px 28px;border-radius:30px;text-decoration:none;color:white}
+
+footer{text-align:center;padding:40px;background:rgba(0,0,0,.6);margin-top:60px}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+
+<nav>
+<div class="logo">
+<svg width="36" height="36" viewBox="0 0 100 100">
+<defs>
+<linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#00ffd5"/>
+<stop offset="100%" stop-color="#0066ff"/>
+</linearGradient>
+</defs>
+<rect x="10" y="10" width="80" height="80" rx="18" fill="url(#g)"/>
+<text x="50" y="60" font-size="42" text-anchor="middle" fill="white" font-weight="700">L</text>
+</svg>
+<span class="logo-text">Lionel Web Design</span>
+</div>
+<ul>
+<li><a href="#services">Prices</a></li>
+<li><a href="#order">Order Website</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header>
+<h1>Professional Websites For Local Businesses</h1>
+<p>Pretoria • South Africa</p>
+<button class="cta" onclick="scrollToSection('order')">Get Your Website</button>
+</header>
+
+<section id="services">
+<h2 class="section-title">Website Packages</h2>
+<div class="services">
+<div class="card"><h3>Starter Website</h3><p>Perfect for small businesses.</p><div class="price">R1000</div></div>
+<div class="card"><h3>Business Website</h3><p>Multiple pages and contact form.</p><div class="price">R2500</div></div>
+<div class="card"><h3>Advanced Website</h3><p>Animations and modern design.</p><div class="price">R3500</div></div>
+<div class="card"><h3>Premium Website</h3><p>Full professional website.</p><div class="price">R5000</div></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Websites I Can Build</h2>
+<div class="gallery">
+<div>Restaurant</div>
+<div>Barber Shop</div>
+<div>Construction</div>
+<div>Car Wash</div>
+<div>Beauty Salon</div>
+<div>Online Store</div>
+</div>
+</section>
+
+<!-- AUTOMATIC SALES PAGE -->
+<section id="order">
+<h2 class="section-title">Order Your Website</h2>
+<div class="sales">
+<p>Fill in the form below and Lionel will contact you to start your website.</p>
+<h3>50% Deposit Required To Start</h3>
+
+<div class="order-box">
+<input id="name" placeholder="Your Name">
+<input id="business" placeholder="Business Name">
+<input id="phone" placeholder="Phone Number">
+
+<select id="package">
+<option>Starter Website - R1000</option>
+<option>Business Website - R2500</option>
+<option>Advanced Website - R3500</option>
+<option>Premium Website - R5000</option>
+</select>
+
+<button onclick="sendOrder()">Order Website</button>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Lionel</h2>
+<div style="text-align:center">
+<div class="phone">Pretoria, South Africa</div>
+<div class="phone">Call: 0632537880</div>
+<div class="phone">WhatsApp: 0736212040</div>
+<div class="phone">Email: lionelhearne777@gmail.com</div>
+<a class="whatsapp" href="https://wa.me/27736212040">Chat On WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Lionel Web Design | Pretoria South Africa</p>
+</footer>
+
+<script>
+
+function scrollToSection(id){
+ document.getElementById(id).scrollIntoView({behavior:'smooth'})
+}
+
+function sendOrder(){
+
+let name=document.getElementById('name').value
+let business=document.getElementById('business').value
+let phone=document.getElementById('phone').value
+let pack=document.getElementById('package').value
+
+let message=`New Website Order:%0AName: ${name}%0ABusiness: ${business}%0APhone: ${phone}%0APackage: ${pack}`
+
+window.open(`https://wa.me/27736212040?text=${message}`)
+
+}
+
+/* particle animation */
+const canvas=document.getElementById('particles')
+const ctx=canvas.getContext('2d')
+
+canvas.width=window.innerWidth
+canvas.height=window.innerHeight
+
+let particles=[]
+
+for(let i=0;i<80;i++){
+particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:2+Math.random()*3,v:0.4+Math.random()})
+}
+
+function draw(){
+ctx.clearRect(0,0,canvas.width,canvas.height)
+ctx.fillStyle='#00ffd5'
+
+particles.forEach(p=>{
+p.y-=p.v
+if(p.y<0)p.y=canvas.height
+
+ctx.beginPath()
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2)
+ctx.fill()
+})
+
+requestAnimationFrame(draw)
+}
+
+draw()
+
+</script>
+
+</body>
+</html>
